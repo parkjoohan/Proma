@@ -9,6 +9,7 @@ import {
 } from "styled-components";
 import NavBar from "../components/common/NavBar";
 import SideBar from "../components/common/SideBar";
+import EpicPage from "../components/epic/EpicPage";
 
 const GlobalStyle = createGlobalStyle`
       body {
@@ -38,13 +39,14 @@ function MyApp({ Component, pageProps }: AppProps) {
       <ThemeProvider theme={darkMode ? darkTheme : lightTheme}>
         <NavBar />
         <div id='container'>
-          <div id="aside" style={{width: "20%", height: "100%", float: "left"}}>
+          <div id="aside" style={{ height: "100%", float: "left", marginRight: "1%"}}>
             <SideBar />
           </div>
-          <div id="section" style={{width: "80%", float: "left"}}>
+          <div id="section" style={{width: "100%"}}>
             <button onClick={onToggleDarkMode}>
               {darkMode ? "dark" : "light"}
             </button>
+            <EpicPage></EpicPage>
           </div>
         </div>
         <Component {...pageProps} />
