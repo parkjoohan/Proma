@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import styled from "styled-components";
 import Box from "@mui/material/Box";
 import Modal from "@mui/material/Modal";
@@ -13,6 +13,8 @@ import {
 import { ThemeType } from "../../interfaces/style";
 import Link from "next/link";
 import Image from "next/image";
+import { useRouter } from "next/router";
+import { Router, useLocation } from "react-router-dom";
 
 //styling
 const style = {
@@ -746,6 +748,25 @@ export const LoginModal = ({
     showJoinModal();
   };
 
+  const router = useRouter(); 
+
+  useEffect(() => {
+    console.log(window.location.href)
+  }, [router])
+  
+  const githubLogin = () => {
+    // window.open('https://github.com/login/oauth/authorize?client_id=e9aef6fccada43586c11','_blank');
+    window.location.href = 'https://github.com/login/oauth/authorize?client_id=e9aef6fccada43586c11';
+    getDate().then((resolvedData) => console.log(resolvedData));
+  }
+
+  function getDate() {
+    return new Promise((resolve, reject) => {
+      let url = window.location.href;
+      resolve(url);
+    })
+  }
+
   return (
     <ModalBox
       open={loginModal}
@@ -756,7 +777,8 @@ export const LoginModal = ({
       <Box sx={style}>
         <Header>Login</Header>
         <BodyContainer>
-          <SocialLoginButton onClick={onSocialLogin}>
+          {/* <SocialLoginButton onClick={onSocialLogin}> */}
+          <SocialLoginButton onClick={githubLogin}>
             <FaGithub />
             <span>GitHub</span>
           </SocialLoginButton>
