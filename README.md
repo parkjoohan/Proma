@@ -56,23 +56,28 @@
 
 #### - BE
 
-1. Spring Boot
+1. Spring Boot 2.5.12
 2. Spring Data JPA
 3. Websockets
 4. STOMP
 
 #### - FE
 
-1. Next.js
-2. Type Script
-3. Redux
-4. SockJS
+1. React 17.0.2
+2. React-redux 7.2.6
+3. next 12.1.0
+4. next-redux-wrapper 7.0.5
+5. styled-components 5.3.5
+6. sockjs-client 1.6.0
+7. stompjs 2.3.3
+8. webstomp-client 1.2.6
 
 #### - DB & Deploy
 
-1. MySQL
-2. Jenkins
-3. Nginx
+1. MySQL 8.0.29
+2. Ubuntu 20.04 LTS
+3. Nginx 1.18.0
+4. Jenkins 2.332.2
 
 #### - Tool
 
