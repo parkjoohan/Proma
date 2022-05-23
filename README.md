@@ -101,4 +101,6 @@
 
 ## UCC
 
-[![Watch the video](https://img.youtube.com/vi/X4551tFmBac/default.jpg)](https://youtu.be/X4551tFmBac)
+<a href="https://youtu.be/X4551tFmBac" target="_blank">
+ <img src="https://img.youtube.com/vi/X4551tFmBac/default.jpg" alt="Watch the video" width="500" height="300" border="10" />
+</a>
