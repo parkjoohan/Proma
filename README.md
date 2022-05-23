@@ -101,4 +101,4 @@
 
 ## UCC
 
-[![Video Label](http://img.youtube.com/vi/X4551tFmBac/0.jpg)]([https://youtu.be/uLR1RNqJ1Mw?t=0s](https://youtu.be/X4551tFmBac))
+[![Watch the video](https://img.youtube.com/vi/X4551tFmBac/default.jpg)](https://youtu.be/X4551tFmBac)
